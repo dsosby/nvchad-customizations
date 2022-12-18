@@ -47,5 +47,9 @@ return {
   ["folke/which-key.nvim"] = {
     disable = false,
   },
+
+  ["shortcuts/no-neck-pain.nvim"] = {
+    disable = false,
+  },
 }
 

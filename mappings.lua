@@ -7,6 +7,7 @@ local ft_cmds = {
 M.general = {
   n = {
     ["<leader>ct"] = { "<cmd> checkt <CR>", "Update all buffers with checkt" },
+    ["<leader>fs"] = { "<cmd> NoNeckPain <CR> <CR>", "Full screen with NoNeckPain" },
   },
 }
 
