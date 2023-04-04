@@ -3,7 +3,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
-local servers = { "gopls", "html", "cssls", "tsserver" }
+local servers = { "gopls", "html", "cssls", "tsserver", "fsautocomplete" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -11,3 +11,9 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig["denols"].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+}

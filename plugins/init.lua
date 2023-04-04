@@ -1,21 +1,21 @@
 return {
-  ["kyazdani42/nvim-tree.lua"] = {
-    override_options = {
-      filters = {
-        custom = { "^\\.git$" },
-      },
-      git = {
-        enable = true,
-      },
-      renderer = {
-        icons = {
-          show = {
-            git = true
-          },
-        },
-      },
-    },
-  },
+  -- ["nvim-tree/nvim-tree.lua"] = {
+  --   override_options = {
+  --     filters = {
+  --       custom = { "^\\.git$" },
+  --     },
+  --     git = {
+  --       enable = true,
+  --     },
+  --     renderer = {
+  --       icons = {
+  --         show = {
+  --           git = true
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
 
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = {
@@ -26,7 +26,7 @@ return {
 
   ["williamboman/mason.nvim"] = {
     override_options = {
-      ensure_installed = { "gopls", "html-lsp", "css-lsp", "typescript-language-server" }
+      ensure_installed = { "gopls", "html-lsp", "css-lsp", "typescript-language-server", "deno" }
     }
   },
 
@@ -49,6 +49,10 @@ return {
   },
 
   ["shortcuts/no-neck-pain.nvim"] = {
+    disable = false,
+  },
+
+  ["adelarsq/neofsharp.vim"] = {
     disable = false,
   },
 }

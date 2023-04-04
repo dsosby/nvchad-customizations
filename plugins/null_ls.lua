@@ -9,6 +9,7 @@ local b = null_ls.builtins
 local sources = {
   -- Just pick the null-ls builtins I care about
   b.formatting.gofmt,
+  b.formatting.deno_fmt,
 }
 
 null_ls.setup {
